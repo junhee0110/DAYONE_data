@@ -6,12 +6,11 @@ def form(a,b,c,d):
         num = den
         den = mod
         mod = num%den
-    print(int(num/den),"/",int(b*d/den))
+    print(int((a*d+b*c)/den),"/",int(b*d/den))
 
     
 a,b=map(int, input("문자열 1 : ").split(","))
 c,d=map(int, input("문자열 2 : ").split(","))
 
 
-form(a,b,c,d)        
-
+form(a,b,c,d) 
